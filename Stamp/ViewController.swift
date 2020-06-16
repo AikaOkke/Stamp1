@@ -58,6 +58,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePickerController.allowsEditing = true
         self.present(imagePickerController, animated: true, completion: nil)
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.originalImage] as? UIImage
+        haikeiImageView.image = image
+        self.dismiss(animated: true, completion: nil)
+    }
 
 
 }
