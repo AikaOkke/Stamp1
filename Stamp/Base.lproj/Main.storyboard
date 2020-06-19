@@ -16,47 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-nV-TP9">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-nV-TP9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eca-Zm-OJc">
-                                <rect key="frame" x="137.5" y="796" width="139" height="36"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8t-DP-aNg">
-                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.8708741982" blue="0.95655172749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="戻る"/>
-                                        <connections>
-                                            <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQh-aO-JL9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-Ax-ksP">
-                                        <rect key="frame" x="49" y="0.0" width="41" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.8708741982" blue="0.95655172749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="保存"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-oC-7Sq">
-                                        <rect key="frame" x="98" y="0.0" width="41" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.8708741982" blue="0.95655172749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="画像"/>
-                                        <connections>
-                                            <action selector="selectBackground" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJ3-yL-3Jv"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qn-eG-3SI">
-                                <rect key="frame" x="75" y="701" width="264" height="60"/>
+                                <rect key="frame" x="75" y="706" width="264" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-5c-hE3" userLabel="Button1">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="vD9-5c-hE3" secondAttribute="height" multiplier="1:1" id="pch-0B-DL3"/>
+                                            <constraint firstAttribute="width" constant="60" id="FLR-04-9Nr"/>
+                                            <constraint firstAttribute="height" constant="60" id="bfo-qZ-mGc"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="hana.png"/>
                                         <connections>
@@ -66,7 +36,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS7-KX-AKN" userLabel="Button2">
                                         <rect key="frame" x="68" y="0.0" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="LS7-KX-AKN" secondAttribute="height" multiplier="1:1" id="nk4-XL-UWN"/>
+                                            <constraint firstAttribute="width" constant="60" id="YCV-Yk-HeN"/>
+                                            <constraint firstAttribute="height" constant="60" id="rAU-tV-Jy0"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="hoshi.png"/>
                                         <connections>
@@ -77,7 +48,7 @@
                                         <rect key="frame" x="136" y="0.0" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="DvD-ar-ap8"/>
-                                            <constraint firstAttribute="width" secondItem="V03-jP-hG5" secondAttribute="height" multiplier="1:1" id="XK7-fk-b2F"/>
+                                            <constraint firstAttribute="width" constant="60" id="gnh-PU-EBN"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="onpu.png"/>
                                         <connections>
@@ -87,8 +58,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aun-au-hIa" userLabel="Button4">
                                         <rect key="frame" x="204" y="0.0" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="K79-12-xeh"/>
-                                            <constraint firstAttribute="height" constant="60" id="r0V-Tg-394"/>
+                                            <constraint firstAttribute="height" constant="60" id="KiM-FY-gtE"/>
+                                            <constraint firstAttribute="width" constant="60" id="QDI-Zl-Ece"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="shitumon.png"/>
                                         <connections>
@@ -96,14 +67,60 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pOB-mU-1VO"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eca-Zm-OJc">
+                                <rect key="frame" x="94" y="796" width="226" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8t-DP-aNg">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.8708741982" blue="0.95655172749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="zuz-WR-E3p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="戻る"/>
+                                        <connections>
+                                            <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQh-aO-JL9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-Ax-ksP">
+                                        <rect key="frame" x="78" y="0.0" width="70" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.8708741982" blue="0.95655172749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="hRt-hI-KjW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="保存"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-oC-7Sq">
+                                        <rect key="frame" x="156" y="0.0" width="70" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.8708741982" blue="0.95655172749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="4Dk-Zt-5b3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="画像"/>
+                                        <connections>
+                                            <action selector="selectBackground" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJ3-yL-3Jv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="5qn-eG-3SI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9jJ-rT-ibl"/>
+                            <constraint firstItem="Ja0-nV-TP9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9mk-68-3Jl"/>
+                            <constraint firstItem="Ja0-nV-TP9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EOw-5a-Ubf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eca-Zm-OJc" secondAttribute="bottom" constant="30" id="Hz9-08-INJ"/>
-                            <constraint firstItem="5qn-eG-3SI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TPY-LK-wpN"/>
-                            <constraint firstItem="eca-Zm-OJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uhh-nO-fi1"/>
-                            <constraint firstItem="eca-Zm-OJc" firstAttribute="top" secondItem="5qn-eG-3SI" secondAttribute="bottom" constant="35" id="uBm-2c-R2w"/>
+                            <constraint firstItem="eca-Zm-OJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czR-dy-KOH"/>
+                            <constraint firstItem="Ja0-nV-TP9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dG8-rc-xPj"/>
+                            <constraint firstItem="5qn-eG-3SI" firstAttribute="top" secondItem="Ja0-nV-TP9" secondAttribute="bottom" constant="25" id="tX4-Uu-hsn"/>
+                            <constraint firstItem="eca-Zm-OJc" firstAttribute="top" secondItem="5qn-eG-3SI" secondAttribute="bottom" constant="30" id="uBm-2c-R2w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
